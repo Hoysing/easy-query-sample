@@ -1,10 +1,10 @@
 ## 简介
-这是一个Easy Query的使用用例，请先执行`resources\sql\mysql.sql`来导入数据，
+这是一个学习使用Easy Query的项目，请先执行`resources\sql\mysql.sql`来导入数据，
 在`com.easy.query.sample.base.Config`中修改数据库配置。
-请不要一次执行全部方法，也不要随便执行有关插入和更新的测试方法，它们不具备幂等性，
-如果测试出错，请重新导入数据。
+请不要一次执行全部方法，因为一旦执行了有关插入和更新的测试方法会污染数据，因为它们不具备幂等性，
+如果运行测试方法出错，请重新导入数据。
 
-具体使用说明请参考 [Easy Query官方文档](`http://www.easy-query.com/`)。
+具体使用说明请参考 [Easy Query官方文档](http://www.easy-query.com)。
 
 ## 对象模式
 在对象模式下，为什么实体类`User`需要实现`ProxyEntityAvailable<User, UserProxy>`
